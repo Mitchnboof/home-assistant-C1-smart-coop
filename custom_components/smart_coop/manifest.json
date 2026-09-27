@@ -1,0 +1,15 @@
+{
+  "domain": "smart_coop",
+  "name": "Smart Coop (Runch)",
+  "codeowners": [
+    "@Mitchnboof"
+  ],
+  "config_flow": true,
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "0.1.0",
+  "dependencies": [],
+  "documentation": "https://github.com/Mitchnboof/home-assistant-C1-smart-coop",
+  "issue_tracker": "https://github.com/Mitchnboof/home-assistant-C1-smart-coop/issues"
+}

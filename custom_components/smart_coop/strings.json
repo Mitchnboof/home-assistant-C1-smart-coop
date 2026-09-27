@@ -1,0 +1,48 @@
+{
+  "title": "Smart Coop (Runch)",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Smart Coop",
+        "description": "Sign in with the same email and password used by the Smart Coop app.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reconnect Smart Coop",
+        "description": "Enter the Smart Coop account password again.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to the Smart Coop cloud.",
+      "invalid_auth": "Smart Coop rejected the email or password.",
+      "unknown": "Unexpected Smart Coop API response. Check the Home Assistant log."
+    },
+    "abort": {
+      "already_configured": "This Smart Coop account is already configured.",
+      "reauth_successful": "Smart Coop authentication updated successfully.",
+      "reauth_failed": "Could not start Smart Coop reauthentication."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "battery": {"name": "Battery"},
+      "brightness": {"name": "Light level"},
+      "open_mode": {"name": "Opening mode"},
+      "opening_time": {"name": "Opening time"},
+      "closing_time": {"name": "Closing time"},
+      "light_open_threshold": {"name": "Light opening threshold"},
+      "close_strength": {"name": "Closing strength"},
+      "raw_door_status": {"name": "Raw door status"}
+    },
+    "binary_sensor": {
+      "online": {"name": "Online"},
+      "charging": {"name": "Charging"}
+    }
+  }
+}
